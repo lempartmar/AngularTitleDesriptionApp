@@ -1,0 +1,12 @@
+<h4 class="text-sucess mt-4"> Add title and description : </h4>
+<div class="shadow">
+  <div class="input-group p-4">
+    <div>
+      <input type="text" class="form-control m-4" placeholder="Enter title" name="task" [(ngModel)] = "addTaskValue">
+    </div>
+    <div>
+      <input type="text" class="form-control m-4" placeholder="Enter description" name="description" [(ngModel)] = "addDescriptionValue">
+    </div>
+      <button class="btn btn-outline-success m-4" type="button" (click)="addTask()">+</button>
+  </div>
+</div>
