@@ -11,8 +11,6 @@ export class AddTitleComponent implements OnInit {
 
 
     taskObj : Task = new Task();
-    // taskArr : Task[] = [];
-
     addTaskValue : string = '';
     addDescriptionValue : string = '';
 
@@ -21,7 +19,6 @@ export class AddTitleComponent implements OnInit {
 
     ngOnInit(): void {
       this.taskObj = new Task();
-      // this.taskArr = [];
     }
 
     addTask(){

@@ -14,7 +14,6 @@ export class DashboardComponent implements OnInit {
 
   addTaskValue : string = '';
 
-
   constructor(private crudService : CrudService) { }
 
   ngOnInit(): void {
@@ -42,21 +41,4 @@ export class DashboardComponent implements OnInit {
         alert(err);
       })
   }
-
-  // editTask(){
-  //   this.crudService.editTask(this.taskObj).subscribe(res=> {
-  //     this.ngOnInit();
-  //   }, err=>
-  //   {alert("Failed to update task");
-  // })
-  // }
-
-  // deleteTask(etask : Task){
-  //   this.crudService.deleteTask(etask).subscribe(res=>{
-  //     this.ngOnInit();
-  //   }, err=> {
-  //     alert("Failed to delete task");
-  //   })
-  // }
-
 }

@@ -18,14 +18,6 @@ export class CrudService {
     return this.http.get<Task[]>(this.serviceURL);
   }
 
-  // deleteTask(task : Task) : Observable<Task>{
-  //   return this.http.delete<Task>(this.serviceURL+'/'+task.id);
-  // }
-
-  // editTask(task : Task) : Observable<Task>{
-  //   return this.http.put<Task>(this.serviceURL+'/'+task.id, task);
-  // }
-
   addTask(task : Task) : Observable<Task>{
     return this.http.post<Task>(this.serviceURL, task);
   }
